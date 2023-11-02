@@ -34,6 +34,7 @@ namespace ControleDeContatos.Repositorio
 			UsuarioModel usuarioDB = ListarPorId(usuario .Id);
 
             if (usuarioDB == null) throw new Exception("Houver um erro na atualização do usuário!");
+
 			usuarioDB.Nome = usuario.Nome;
 			usuarioDB.Email = usuario.Email;
 			usuarioDB.Login = usuario.Login;
